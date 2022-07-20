@@ -1,0 +1,253 @@
+
+html {
+    box-sizing:border-box;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    font-family: 'Exo 2', sans-serif;
+}
+ 
+*,*:before, *:after {
+    box-sizing:inherit;
+}
+
+body {
+    margin:0
+    }
+
+.row img {
+margin-bottom: -8px;
+}
+
+.menu {
+
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px 0 30px;
+    background-color:white;
+    text-decoration: none;
+}
+
+
+.menu__item {
+
+    margin:5px 5px 5px 5px;
+    padding:5px 5px 5px 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor:  pointer; 
+    color:black;
+}
+
+.menu__item:hover {
+    margin:5px 5px 5px 5px;
+    padding:5px 5px 5px 5px;
+    text-decoration: none;
+    cursor:  pointer; 
+    text-shadow: 1px 1px 26px red;
+    color:rgb(171, 24, 24);
+}
+
+.logo {
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.logo__heart {
+    width: 5%;
+    height: 5%;
+    position: relative;
+    display: inline-block;
+}
+
+.logo__heart .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo__heart:hover .img-top {
+    display: inline;
+}
+
+h5, .about__title {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Rampart One', cursive;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+
+.container:after, .container:before, .row:after,.row:before {
+    content:"";
+    display:table;
+    clear:both;
+}
+.half {
+    float:left;
+    width:100%;
+    width:49.99999%;
+}
+
+
+.content {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 980px;
+}
+
+
+.about {
+
+    display: block;
+    align-items:center;
+    justify-content: center;
+    margin: 40px 100px 40px 100px;
+}
+
+.about__text {
+    font-size: 20px;
+}
+
+/*CONTACT FORM STYLES*/
+
+
+.contact {
+    font-size: 20px;
+    color:aliceblue;
+    background-image: url(main2.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment:fixed;
+    
+
+
+     }
+
+    .contact__title {
+
+        text-align: center;
+        margin-bottom: -70px;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+
+    label {
+
+    color:black;
+    }
+
+    form {
+        background: white;
+        width: 640px;
+        margin: 90px auto 150px;
+        max-width: 100%;
+        border-radius: 4px;
+        padding: 55px 30px;
+     }
+     
+     form .title h2{
+         letter-spacing: 6px;
+         border-bottom: 1px solid white;
+         display: inline-block;
+         padding-bottom: 8px;
+         margin-bottom: 32px;
+     }
+     
+     form .half-contact{
+         display: flex;
+         justify-content: space-between;
+     }
+     
+     form .half-contact .item{
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 24px;
+         width: 48%;
+     }
+     
+     form label{
+         display: block;
+         font-size: 13px;
+         letter-spacing: 3.5px;
+         margin-bottom: 16px;
+     }
+     
+     form .half-contact .item input {
+         border-radius: 4px;
+         border: 1px solid black;
+         outline: 0;
+         padding: 16px;
+         width: 100%;
+         height: 44px;
+         background: transparent;
+         font-size: 17px;
+     }
+     
+     form .full {
+         margin-bottom: 24px;
+     }
+     form .full textarea{
+         background: transparent;
+         border-radius: 4px;
+         border: 1px solid black;
+         outline: 0;
+         padding: 12px 16px;
+         height: 180px;
+         width: 350px;
+         font-size: 17px;
+     }
+     
+     form .action input{
+         background: transparent;
+         border-radius: 4px;
+         border: 1px solid black;
+         cursor: pointer;
+         font-size: 13px;
+         font-weight: 600;
+         height: 44px;
+         letter-spacing: 3px;
+         outline: 0;
+         padding: 0 20px 0 22px;
+         margin-right: 10px;
+     }
+     
+     form .action input[type="submit"]{
+         background: rgb(229, 227, 232);
+         color: black;
+     }
+     
+     
+     form .icons a{
+         border: 1px solid rgb(21, 20, 20);
+         border-radius: 50%;
+         line-height: 36px;
+         text-align: center;
+         font-weight: 600;
+         width: 38px;
+         margin-top: 30px;
+         margin-right: 10px;
+     
+     }
+     
+     form .half-contact .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover {
+         background: rgba(255,255,255,0.075);
+     
+     }
+     
+     iframe {
+         position: absolute;
+         margin: 80px 230px;
+     }
